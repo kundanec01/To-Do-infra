@@ -7,16 +7,16 @@
 # https://aka.ms/yaml
 
 trigger: none
-pool:
-  vmImage: 'windows-latest'
+pool: agent-ka-jhoond
+ 
 
 
 steps:
-- task: PowerShell@2
+- task: CmdLine@2
   inputs:
-    targetType: 'inline'
     script: |
-      # Write your PowerShell commands here.
-      write-Host "Hello World"
+      echo Write your commands here
+      
+      echo Hello world
 
 
