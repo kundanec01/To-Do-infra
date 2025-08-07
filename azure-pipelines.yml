@@ -7,8 +7,9 @@
 # https://aka.ms/yaml
 
 trigger: none
+pool:
+  vmImage: 'windows-latest'
 
-pool: agent-ka-jhoond
 
 steps:
 - task: PowerShell@2
